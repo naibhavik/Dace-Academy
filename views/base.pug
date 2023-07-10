@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Harry Dance Academy
+    block scripts
+    block style 
+     link(rel="stylesheet", href="style.css")
+     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+                | NBDA
+            li #[a(href="/") Home]
+            li #[a(href="/static/about.html") About]
+            li #[a(href="/static/my.html") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact Us]
+            
+    block content
+    footer#footer
+        | Copyright © 2019 NaiBhavikDanceAcademy.com | All rights reserved
